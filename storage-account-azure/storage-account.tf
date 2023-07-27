@@ -2,7 +2,7 @@ resource "azurerm_resource_group" "primeiro_resource_group" {
   location = var.location
   name     = "storage_account_resource_group"
 
-  tags = ""
+  tags = local.common_tags
 }
 
 resource "azurerm_storage_account" "primeiro_storage_account" {
